@@ -1,0 +1,57 @@
+site_name: Oméga Facility DarkRP Documentation
+site_url: https://Omega-Studios-Team.github.io/Omega-Facility-DarkRP-Documentation
+nav:
+  - Accueil: index.md
+  - Nouveautés:
+      - blog/index.md
+  - Documentation:
+    - Les SCP Jouables: playablescps.md
+    - Les SCP Objets: scpsobjects.md
+    - Les Objets Personnalisés: objects.md
+    - Commandes: commands.md
+theme:
+  features:
+    - navigation.footer
+    - navigation.indexes
+  name: material
+  logo: assets/logo.png
+  favicon:
+  icon:
+    annotation: material/arrow-right-circle
+  language: fr
+  palette:
+    - media: '(prefers-color-scheme: light)'
+      scheme: default
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Dark-mode version
+    - media: '(prefers-color-scheme: dark)'
+      scheme: slate
+      primary: indigo
+      accent: light blue
+      toggle:
+        icon:  material/weather-sunny
+        name: Light-mode version
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Omega-Studios-Team
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/omega-facility-darkrp
+  generator: false
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - attr_list
+  - md_in_html
+  - pymdownx.superfences
+plugins:
+  - search
+  - blog:
+      enabled: true
+      blog_dir: blog
+      blog_toc: true
+      archive: false
+copyright: Copyright &copy; 2024 Oméga Studios. Powered by Mkdocs
